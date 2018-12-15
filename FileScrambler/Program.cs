@@ -12,12 +12,12 @@ namespace FileScrambler
 
             Console.WriteLine("Encode \"" + word + "\" with key: " + keyword);
 
-            string result = FileScrambler.Encode(word, keyword);
+            string result = StringScrambler.Encode(word, keyword);
 
             Console.WriteLine("Result: " + result);
 
 
-            string decode = FileScrambler.Decode(result, keyword);
+            string decode = StringScrambler.Decode(result, keyword);
 
             Console.WriteLine("Decoded: " + decode);
 
